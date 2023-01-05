@@ -3,14 +3,15 @@ package com.central.stores.employees.model.dto;
 import java.io.Serializable;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
+@NoArgsConstructor
 public class Pagination implements Serializable{
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = 1L;
 	private long offset;
 	private int pageSize;

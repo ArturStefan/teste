@@ -10,11 +10,10 @@ import com.central.stores.employees.model.dto.AddressDTO;
 @Mapper(componentModel = "spring")
 public interface AddressMapper {
 	@Mappings({
+		@Mapping(target= "created", expression = "java(java.time.LocalDate.now())"),
 		@Mapping(target= "id", ignore= true),
 		@Mapping(target= "changed", ignore= true),
-		@Mapping(target= "created", expression = "java(java.time.LocalDate.now())"),
 	})
-	
 	Address toModel(AddressDTO addressDTO);
 	
 }

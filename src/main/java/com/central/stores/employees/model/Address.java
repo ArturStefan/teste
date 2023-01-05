@@ -25,7 +25,6 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 public class Address implements Serializable{
-	
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -44,4 +43,6 @@ public class Address implements Serializable{
 	private LocalDate created;
 	@DateTimeFormat(pattern = Conf.DATE_FORMAT)
 	private LocalDate changed;
+	
+	
 }

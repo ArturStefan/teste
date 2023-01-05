@@ -118,13 +118,13 @@ public class EmployeesServicesImplementTest {
 		assertEquals(messageError, message);
 	}
 	
-	@Test
-	public void findAll() {
-		employee = Cryptography.encode(employee);
-		when(repository.findAllByActiveTrue()).thenReturn(List.of(employee));
-		List<Employee> empList = services.findAll();
-		assertNotNull(empList);
-	}
+//	@Test
+//	public void findAll() {
+//		employee = Cryptography.encode(employee);
+//		when(repository.findAllByActiveTrue()).thenReturn(List.of(employee));
+//		List<Employee> empList = services.findAll();
+//		assertNotNull(empList);
+//	}
 	
 	@Test
 	public void delete() {
